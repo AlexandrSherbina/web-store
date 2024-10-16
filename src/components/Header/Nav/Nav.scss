@@ -1,0 +1,14 @@
+.container-top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.fillColor {
+    fill: darkslateblue;
+    transition: 0.5s fill;
+    &:hover {
+        fill:tomato;
+    }
+}

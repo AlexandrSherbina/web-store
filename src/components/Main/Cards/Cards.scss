@@ -1,0 +1,63 @@
+.cards-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    place-content: center;
+    .custom-card {
+        max-height: 24rem;
+        padding-bottom: 1rem;
+        display: grid;
+        grid-template-areas:
+          "img"
+          "title"
+          "description"
+          "category"
+          "price"
+          "button"
+        ;
+        grid-template-columns: 200px;
+        grid-template-rows: 140px 66px 24px 44px 44px 36px ;
+    
+        .card-title {
+          grid-area: title;
+        }
+    
+        .card-img {
+          grid-area: img;
+    
+          &>img {
+            width: 160px;
+            height: 140px;
+            object-fit: contain;
+            background: gray;
+          }
+        }
+    
+        .card-description {
+          grid-area: description;
+        }
+    
+        .card-category {
+          grid-area: category;
+          color: black;
+          font-size: small;
+          font-weight: 500;
+          border-radius: 4rem;
+          border: 1px solid gray;
+          background: lightgrey;
+          margin: 0.5rem 0rem;
+          padding: 0.2rem;
+        }
+    
+        .card-price {
+          grid-area: price;
+          margin: 0.5rem 0rem;
+        }
+    
+        .card-btn {
+          grid-area: button;
+        }
+      }
+  }
+
+  

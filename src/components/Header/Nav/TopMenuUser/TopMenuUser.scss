@@ -1,0 +1,37 @@
+.menu-top-user-custom {    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    column-gap: 1rem;
+    .menu-top-user-custom-item {
+        .menu-top-user-custom-link {
+            padding: 1rem 0.5rem;           
+            transition: all 0.5s;
+            &:hover {
+                color: darkgray
+            }
+          
+        }
+    }
+}
+
+.basketImg {
+    position: relative;
+    cursor: pointer;
+    & .menu-top-user-orders {        
+        position: absolute;
+        top: -4px;
+        right: -1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-weight: 500;
+        background: cadetblue;
+        border-radius: 50%;
+        font-size: small;
+    }
+
+}
