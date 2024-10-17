@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import useProductsContext from "../../../hooks/Products/Products";
 import useFilterProductsContext from "../../../hooks/FilterProducts/FilterProducts";
+import CheckBox from "../../UI/CheckBox/CheckBox";
 
 const CategoryFilter = () => {
   const { products } = useProductsContext();
@@ -50,19 +51,11 @@ const CategoryFilter = () => {
   return (
     <div className="ms-1">
       <legend>Category</legend>
-      <div className="form-check">
-        <input
-          ref={refCheckBoxAllCategory}
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckDefault"
-          onChange={handleChangeAllCategory}
-        />
-        <label className="form-check-label" htmlFor="flexCheckDefault">
-          All categories
-        </label>
-      </div>
+      <CheckBox
+        ref={refCheckBoxAllCategory}
+        onChange={handleChangeAllCategory}
+        labelText="All categories"
+      />
       {uniqueCategory.map((category, i) => {
         return (
           <div
