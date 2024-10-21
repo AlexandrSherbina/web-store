@@ -58,24 +58,14 @@ const CategoryFilter = () => {
       />
       {uniqueCategory.map((category, i) => {
         return (
-          <div
-            key={`${category}-filter-category-${i}`}
-            className="form-check mb-1"
-          >
-            <input
-              className="form-check-input checked-class"
-              type="checkbox"
-              value={category}
-              id={"flexCheckDefault" + i}
-              onChange={handleChangeCategory}
-            />
-            <label
-              className="form-check-label"
-              htmlFor={"flexCheckDefault" + i}
-            >
-              {category}
-            </label>
-          </div>
+          <CheckBox
+            key={`${category}-filter-${i}`}
+            onChange={handleChangeCategory}
+            labelText={category}
+            classInput="checked-class"
+            value={category}
+            idInput={"flexCheckDefault" + i}
+          />
         );
       })}
     </div>

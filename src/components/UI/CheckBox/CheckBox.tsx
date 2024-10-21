@@ -1,7 +1,6 @@
 import React, { forwardRef, useId, useState } from "react";
 
 interface CheckBoxProps extends React.HTMLAttributes<HTMLInputElement> {
-  key?: string;
   value?: string;
   onChange: (event?: any) => void;
   labelText: string;
@@ -15,7 +14,6 @@ interface CheckBoxProps extends React.HTMLAttributes<HTMLInputElement> {
 const CheckBox = forwardRef<HTMLInputElement, CheckBoxProps>(
   (
     {
-      key,
       value,
       onChange,
       idInput,
@@ -37,7 +35,7 @@ const CheckBox = forwardRef<HTMLInputElement, CheckBoxProps>(
     const idInputDefault = useId();
     const checkIdInput = idInput ? idInput : idInputDefault;
     return (
-      <div key={`${key}`} className={`form-check ${classWrap}`}>
+      <div className={`form-check ${classWrap}`}>
         <input
           ref={ref}
           className={`form-check-input ${classInput}`}
