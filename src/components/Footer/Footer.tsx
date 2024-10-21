@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   const lastYear = date.getFullYear() - 1;
   const currentYear = date.getFullYear();
   return (
-    <footer className="footer-container">
+    <footer className="footer-container border-top">
       <span>
         &copy;Copyright {lastYear}-{currentYear}
       </span>

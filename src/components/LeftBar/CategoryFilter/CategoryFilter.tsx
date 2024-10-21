@@ -7,9 +7,7 @@ const CategoryFilter = () => {
   const { products } = useProductsContext();
   const [uniqueCategory, setUniqueCategory] = useState<string[]>([]);
   const [checkBoxChoose, setCheckBoxChoose] = useState<string[]>([]);
-  const [checkedAllCategory, setCheckedAllCategory] = useState<boolean>(false);
   const refCheckBoxAllCategory = useRef<HTMLInputElement>(null);
-  console.log("checkBoxChoose", checkBoxChoose);
   const {} = useFilterProductsContext("category", products, checkBoxChoose);
 
   const handleChangeCategory = (event: { target: any }) => {

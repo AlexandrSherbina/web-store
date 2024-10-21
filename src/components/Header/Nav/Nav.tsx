@@ -29,7 +29,7 @@ const userMenu = [
 
 const Nav: React.FC = () => {
   return (
-    <nav className="container-top-nav ">
+    <nav className="container-top-nav  ">
       <TopMenuNav data={mainMenu}></TopMenuNav>
       <Search></Search>
       <TopMenuUser data={userMenu}></TopMenuUser>

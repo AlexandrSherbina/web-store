@@ -3,7 +3,7 @@ import "./LeftBar.scss";
 const LeftBar = () => {
   return (
     <>
-      <nav className="leftBar">
+      <nav className="leftBar border-end border-bottom pt-3">
         <form action="">
           <fieldset>
             <CategoryFilter />

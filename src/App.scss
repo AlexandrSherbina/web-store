@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.container {
+.container-store {
   display: grid;
  grid-template-areas:
  "head head "
@@ -23,12 +23,12 @@
   
   & > nav.leftBar {
     grid-area: navLeft;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   
   & > main {
     grid-area: main;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   
   & > footer {

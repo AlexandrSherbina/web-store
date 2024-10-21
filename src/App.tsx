@@ -44,7 +44,7 @@ function App() {
   ) => setOrders(order);
   return (
     <>
-      <div className="container">
+      <div className="container-fluid container-store ps-0 pe-0">
         <ProductsContext.Provider
           value={{
             products,
